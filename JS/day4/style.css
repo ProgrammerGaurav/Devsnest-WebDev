@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(45deg, #1870ed 0, #f18f88 100%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", "sans-serif";
+}
+
+.analog-clock {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  background: #000;
+  border: 5px solid black;
+  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.15),
+    0 15px 90px 30px rgba(0, 0, 0, 0.25);
+}
+
+.analog-clock .minute,
+.analog-clock .hour,
+.analog-clock .second {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  height: 3px;
+  background: #fff;
+  transform: translateY(-50%);
+  transform-origin: left center;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+}
+.analog-clock .hour {
+  height: 5px;
+  width: 30%;
+}
+.analog-clock .second {
+  width: 40%;
+  height: 2px;
+  background: #ff4b3e;
+}
+.analog-clock .dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 100px;
+  background: white;
+  border: 2px solid #1b1b1b;
+  border-radius: 100px;
+  z-index: 1;
+}
+
+.digital-clock {
+  min-width: 510px;
+  color: white;
+  margin: 50px;
+  display: flex;
+  position: relative;
+  background-color: #080808;
+  border-radius: 5px;
+  padding: 30px 20px;
+  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.15),
+    0 15px 90px 30px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  font-size: 4.2rem;
+}
+
+.digital-clock .colon {
+  position: relative;
+  top: 10px;
+  padding: 0px 20px;
+  font-size: 3rem;
+  color: rgba(255, 255, 255, 0.35);
+}

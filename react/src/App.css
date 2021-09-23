@@ -1,0 +1,171 @@
+.App {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.card {
+	box-shadow: 3px 5px 6px -2px black, -6px -7px 6px -2px #ecdede;
+	/* box-shadow: 3px 5px 6px -2px black; */
+	width: 320px;
+	padding: 5px;
+}
+.card-text {
+	padding: 5px;
+}
+.card-pic {
+	width: 150px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.card-pic > img {
+	width: 100%;
+
+	border-radius: 5px;
+}
+
+.instructions {
+	min-height: 60px;
+	padding: 15px 0;
+}
+.chess-board {
+	border: 19px solid black;
+	height: 200px;
+	width: 200px;
+	display: grid;
+	grid-template-rows: repeat(8, 1fr);
+	grid-gap: 0;
+	padding: 0;
+	margin: 0;
+}
+.row {
+	display: flex;
+}
+.squre {
+	/* border: 1px solid black; */
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.black {
+	background: black;
+}
+.row:nth-child(even) .squre:nth-child(even) {
+	background: black;
+}
+.row:nth-child(odd) .squre:nth-child(odd) {
+	background: black;
+}
+/* .squre:nth-child() {
+  background: black;
+} */
+
+/* Day 18 */
+#day18 {
+	width: 200px;
+	height: 200px;
+	border: 20px solid black;
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+}
+
+#day18 .box {
+	width: 25px;
+	height: 25px;
+	background-color: green;
+}
+.cal-app-container {
+	/* border: 1px solid red; */
+	width: 500px;
+	height: 400px;
+	padding: 10px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	box-shadow: 2px 3px 9px -1px black;
+}
+.Card {
+	width: 90%;
+	/* border: 1px solid red; */
+	background: olivedrab;
+	padding: 5px;
+	margin: 6px;
+	border-radius: 5px;
+	box-shadow: 3px 1px 9px -1px #3d581a;
+	/* color: white; */
+}
+.instructions {
+	min-height: 60px;
+	padding: 15px 0;
+}
+.instructions > h1 {
+	text-align: center;
+}
+
+.cal-app-container {
+	/* border: 1px solid red; */
+	width: 350px;
+	height: 400px;
+	padding: 10px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	box-shadow: 2px 3px 9px -1px black;
+}
+.Card {
+	width: 90%;
+	/* border: 1px solid red; */
+	background: olivedrab;
+	padding: 5px;
+	margin: 6px;
+	border-radius: 5px;
+	box-shadow: 3px 1px 9px -1px #3d581a;
+	height: 90px;
+	padding: 15px;
+	/* color: white; */
+}
+.Card h2 {
+	margin-bottom: 0;
+}
+.instructions {
+	min-height: 60px;
+	padding: 15px 0;
+}
+.instructions > h1 {
+	text-align: center;
+}
+.Card .action {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 30px;
+}
+
+.day26 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.day26 h3 {
+	margin-top: 50px;
+}
+.day26 input {
+	display: block;
+	margin: 10px;
+	width: 300px;
+}
+.day26 .button {
+	text-align: center;
+	padding: 5px 10px;
+	width: 300px;
+	background-color: #1a1a1a;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.day26 .button:hover {
+	opacity: 0.8;
+}
+.day26 h6 {
+	text-align: left;
+}
